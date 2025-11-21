@@ -1,0 +1,11 @@
+from django.shortcuts import render
+
+# Create your views here.
+from django.http import HttpResponse
+def index(request):
+# Create a simple html page as a string
+    template = "<html>" \
+                "Chinggis khaan's birthday" \
+                "</html>"
+# Return the template as content argument in HTTP response
+    return HttpResponse(content=template)
